@@ -1,0 +1,199 @@
+@import 'fonts';
+main {
+    width: 32.7rem;
+    height: 39.8rem;
+    margin: 0 auto 9.4rem auto;
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        h1 {
+            @include h1-text-mobile;
+            color: #54E6AF;
+            font-weight: 100;
+        }
+        p {
+            @include p-text-mobile;
+        }
+    }
+    .sponsors {
+        width: 31.5rem;
+        height: 1.7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3.3rem;
+        margin-bottom: 4.8rem;
+        .spotify {
+            width: 5.6rem;
+            height: 1.7rem;
+            background-image: url(/pod-landing-page/assets/desktop/spotify.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .apple {
+            width: 4.5rem;
+            height: 1.7rem;
+            background-image: url(/pod-landing-page/assets/desktop/apple-podcast.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .google {
+            width: 7.3rem;
+            height: 1.1rem;
+            background-image: url(/pod-landing-page/assets/desktop/google-podcasts.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .pocket {
+            width: 7.7rem;
+            height: 1.5rem;
+            background-image: url(/pod-landing-page/assets/desktop/pocket-casts.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    .input {
+        width: 32.7rem;
+        height: 10.8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        #error-msg {
+            font-family: 'Chivo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #FB3E3E;
+            margin-top: 0.8rem;
+            margin-left: 3.2rem;
+        }
+        .email-input {
+            width: 32.7rem;
+            height: 4.6rem;
+            background: #2C344B;
+            border-radius: 2.8rem;
+            border: none;
+            @include input-text;
+            filter: opacity(1);
+            padding-left: 3.2rem;
+        }
+        .btn-access {
+            @include input-text;
+            width: 32.6rem;
+            height: 4.8rem;
+            background: #54E6AF;
+            box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+            border-radius: 2.8rem;
+            border: none;
+            color: #121725;
+            &:hover {
+                cursor: pointer;
+                background: #B3FFE2;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.bg-img {
+    background-image: url(/pod-landing-page/assets/mobile/image-host.jpg);
+    background-position: top;
+    position: absolute;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    mix-blend-mode: screen;
+    filter: brightness(0.1);
+}
+
+//tablet version
+@media screen and (min-width:768px) {
+    .bg-img {
+        background-image: url(/pod-landing-page/assets/tablet/image-host.jpg), url(/pod-landing-page/assets/desktop/bg-pattern-dots.svg);
+        background-position: top right, bottom left 3rem;
+        filter: none;
+        mix-blend-mode: lighten;
+    }
+    main {
+        width: 63.5rem;
+        height: 50.9rem;
+        position: relative;
+        background: #121725;
+        display: flex;
+        flex-direction: column;
+        margin: 8.8rem 9.4rem auto 3.9rem;
+        .text {
+            margin-top: 9.3rem;
+            h1 {
+                @include h1-text-tablet;
+                text-align: left;
+            }
+            p {
+                @include p-text-tablet;
+                text-align: left;
+                width: 44.5rem;
+            }
+        }
+        .sponsors {
+            order: 1;
+            width: 53.6rem;
+            height: 2.9rem;
+            opacity: 0.7;
+            .spotify {
+                width: 9.6rem;
+                height: 2.9rem;
+            }
+            .apple {
+                width: 7.8rem;
+                height: 2.9rem;
+            }
+            .google {
+                width: 12.5rem;
+                height: 1.8rem;
+            }
+            .pocket {
+                width: 12.9rem;
+                height: 2.6rem;
+            }
+        }
+        .input {
+            width: 42.7rem;
+            height: 5.6rem;
+            position: relative;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            .email-input {
+                width: 42.7rem;
+                height: 5.6rem;
+            }
+            .btn-access {
+                width: 16.2rem;
+                height: 4.6rem;
+                position: absolute;
+                left: 60.89%;
+                top: 9%;
+                box-shadow: unset;
+            }
+        }
+    }
+}
+
+//desktop version
+@media screen and (min-width:1440px) {
+    .bg-img {
+        background-image: url(/pod-landing-page/assets/desktop/bg-pattern-dots.svg), url(/pod-landing-page/assets/desktop/image-host.jpg);
+        background-position: bottom 7.8rem right, top 13rem right;
+    }
+    main {
+        width: 72.3rem;
+        margin-left: 16.5rem;
+        .text {
+            h1 {
+                @include h1-text-desktop;
+            }
+        }
+    }
+}

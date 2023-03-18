@@ -1,0 +1,18 @@
+@use 'fonts';
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Chivo;
+    background: #121725;
+}

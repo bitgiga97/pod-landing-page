@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+@mixin h1-text-mobile {
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.6em;
+    line-height: 3.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@mixin h1-text-tablet {
+    font-size: 4.8em;
+    line-height: 5.6rem;
+}
+
+@mixin h1-text-desktop {
+    font-size: 5.2em;
+    line-height: 6.2rem;
+}
+
+@mixin p-text-mobile {
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #C2CBE5;
+}
+
+@mixin p-text-tablet {
+    font-size: 1.8em;
+    line-height: 2.8rem;
+}
+
+@mixin input-text {
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 2.8rem;
+}

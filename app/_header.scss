@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: center;
+    .logo {
+        width: 13.4rem;
+        height: 5.6rem;
+        background-image: url(/pod-landing-page/assets/desktop/logo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 6.2rem;
+        margin-bottom: 5.7rem;
+    }
+}
+
+//tablet version 
+@media screen and (min-width:768px) {
+    header {
+        justify-content: flex-start;
+        margin-left: 3.9rem;
+    }
+}
+
+//desktop version
+@media screen and (min-width:1440px) {
+    header {
+        margin-left: 16.5rem;
+        position: relative;
+        top: 4.2rem;
+    }
+}

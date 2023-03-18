@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Chivo;
+  background: #121725;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header .logo {
+  width: 13.4rem;
+  height: 5.6rem;
+  background-image: url(/pod-landing-page/assets/desktop/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 6.2rem;
+  margin-bottom: 5.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    justify-content: flex-start;
+    margin-left: 3.9rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header {
+    margin-left: 16.5rem;
+    position: relative;
+    top: 4.2rem;
+  }
+}
+main {
+  width: 32.7rem;
+  height: 39.8rem;
+  margin: 0 auto 9.4rem auto;
+}
+main .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+main .text h1 {
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.6em;
+  line-height: 3.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #54E6AF;
+  font-weight: 100;
+}
+main .text p {
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #C2CBE5;
+}
+main .sponsors {
+  width: 31.5rem;
+  height: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.3rem;
+  margin-bottom: 4.8rem;
+}
+main .sponsors .spotify {
+  width: 5.6rem;
+  height: 1.7rem;
+  background-image: url(/pod-landing-page/assets/desktop/spotify.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .sponsors .apple {
+  width: 4.5rem;
+  height: 1.7rem;
+  background-image: url(/pod-landing-page/assets/desktop/apple-podcast.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .sponsors .google {
+  width: 7.3rem;
+  height: 1.1rem;
+  background-image: url(/pod-landing-page/assets/desktop/google-podcasts.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .sponsors .pocket {
+  width: 7.7rem;
+  height: 1.5rem;
+  background-image: url(/pod-landing-page/assets/desktop/pocket-casts.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .input {
+  width: 32.7rem;
+  height: 10.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+main .input #error-msg {
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FB3E3E;
+  margin-top: 0.8rem;
+  margin-left: 3.2rem;
+}
+main .input .email-input {
+  width: 32.7rem;
+  height: 4.6rem;
+  background: #2C344B;
+  border-radius: 2.8rem;
+  border: none;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4em;
+  line-height: 2.8rem;
+  filter: opacity(1);
+  padding-left: 3.2rem;
+}
+main .input .btn-access {
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4em;
+  line-height: 2.8rem;
+  width: 32.6rem;
+  height: 4.8rem;
+  background: #54E6AF;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+  border-radius: 2.8rem;
+  border: none;
+  color: #121725;
+}
+main .input .btn-access:hover {
+  cursor: pointer;
+  background: #B3FFE2;
+  transition: 0.5s;
+}
+
+.bg-img {
+  background-image: url(/pod-landing-page/assets/mobile/image-host.jpg);
+  background-position: top;
+  position: absolute;
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  filter: brightness(0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .bg-img {
+    background-image: url(/pod-landing-page/assets/tablet/image-host.jpg), url(/pod-landing-page/assets/desktop/bg-pattern-dots.svg);
+    background-position: top right, bottom left 3rem;
+    filter: none;
+    mix-blend-mode: lighten;
+  }
+  main {
+    width: 63.5rem;
+    height: 50.9rem;
+    position: relative;
+    background: #121725;
+    display: flex;
+    flex-direction: column;
+    margin: 8.8rem 9.4rem auto 3.9rem;
+  }
+  main .text {
+    margin-top: 9.3rem;
+  }
+  main .text h1 {
+    font-size: 4.8em;
+    line-height: 5.6rem;
+    text-align: left;
+  }
+  main .text p {
+    font-size: 1.8em;
+    line-height: 2.8rem;
+    text-align: left;
+    width: 44.5rem;
+  }
+  main .sponsors {
+    order: 1;
+    width: 53.6rem;
+    height: 2.9rem;
+    opacity: 0.7;
+  }
+  main .sponsors .spotify {
+    width: 9.6rem;
+    height: 2.9rem;
+  }
+  main .sponsors .apple {
+    width: 7.8rem;
+    height: 2.9rem;
+  }
+  main .sponsors .google {
+    width: 12.5rem;
+    height: 1.8rem;
+  }
+  main .sponsors .pocket {
+    width: 12.9rem;
+    height: 2.6rem;
+  }
+  main .input {
+    width: 42.7rem;
+    height: 5.6rem;
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  main .input .email-input {
+    width: 42.7rem;
+    height: 5.6rem;
+  }
+  main .input .btn-access {
+    width: 16.2rem;
+    height: 4.6rem;
+    position: absolute;
+    left: 60.89%;
+    top: 9%;
+    box-shadow: unset;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bg-img {
+    background-image: url(/pod-landing-page/assets/desktop/bg-pattern-dots.svg), url(/pod-landing-page/assets/desktop/image-host.jpg);
+    background-position: bottom 7.8rem right, top 13rem right;
+  }
+  main {
+    width: 72.3rem;
+    margin-left: 16.5rem;
+  }
+  main .text h1 {
+    font-size: 5.2em;
+    line-height: 6.2rem;
+  }
+}/*# sourceMappingURL=main.css.map */
