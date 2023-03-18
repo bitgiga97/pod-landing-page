@@ -252,6 +252,7 @@ main .input .email-input {
   line-height: 2.8rem;
   filter: opacity(1);
   padding-left: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 main .input .btn-access {
   font-family: "Chivo";

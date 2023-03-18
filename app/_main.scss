@@ -78,6 +78,7 @@ main {
             @include input-text;
             filter: opacity(1);
             padding-left: 3.2rem;
+            margin-bottom: 1.6rem;
         }
         .btn-access {
             @include input-text;
