@@ -236,7 +236,6 @@ main .input #error-msg {
   font-size: 12px;
   line-height: 14px;
   color: #FB3E3E;
-  margin-top: 0.8rem;
   margin-left: 3.2rem;
 }
 main .input .email-input {
